@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Player</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	
+	<div class="que">
+		<h1><u>Files Uploaded:</u></h1>
+		<button type="button" id="text"></button>
+	</div>
+
+	<!-- ******************************************** -->
+	<!-- ******************************************** -->
+	<!-- ******************************************** -->
+
+	<div  class="div2">
+
+	<input type="file" id="real-btn" hidden="hidden"/>
+	<span title="Add files"><button onclick="addfile()" id="addbtn" type="button">&#43</button></span>
+	<span title="Play"><button onclick="PlayVideo()" id="plybtn" type="button">&#9658</button></span>
+	<span title="Stop"><button onclick="stopVideo()" id="stopbtn" type="button">&#9609</button></span>
+	<span title="Screenshot"><button onclick="srnshot()" id="ssbtn" type="button">&#10697</button></span>
+	</div>
+	<!-- ******************************************** -->
+	<div class="div1">
+		<video id= "video" width="600px" height="400px">
+			<source src="" type="video/mp4">
+			<source src="" type="video/avi">
+			<source src="" type="video/mkv">
+			Your browser does not support the video tag.
+		</video>
+
+	</div>
+
+
+<script type="text/javascript" src="mediaPlayer.js"></script>
+<script type="text/javascript" src="html2canvas.min.js"></script>
+</body>
+</html>
